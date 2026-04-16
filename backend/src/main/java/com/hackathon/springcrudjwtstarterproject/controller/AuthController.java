@@ -27,7 +27,7 @@ public class AuthController {
         return ResponseEntity.ok(authService.login(loginUserRequest));
     }
 
-    // Временный эндпоинт для диагностики — удалим после
+
     @GetMapping("/test")
     public ResponseEntity<String> test() {
         return ResponseEntity.ok("App is working!");
